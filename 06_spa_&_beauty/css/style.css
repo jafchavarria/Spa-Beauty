@@ -46,6 +46,11 @@ body {
   max-width: 1920px;
 }
 
+nav {
+  position: relative;
+  z-index: 1;
+}
+
 .container {
   display: flex;
   height: 820px;
