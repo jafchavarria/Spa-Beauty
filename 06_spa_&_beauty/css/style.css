@@ -1,0 +1,271 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+/*
+.poppins-thin {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+*/
+/*
+.nunito-<uniquifier> {
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+*/
+
+/* ----------------------------------------------------------------------------------- */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+  font-weight: 400;
+  font-size: 18px;
+  color: #264065;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  color: #909090;
+  width: 100%;
+  min-width: 1440px;
+  max-width: 1920px;
+}
+
+.container {
+  display: flex;
+  height: 820px;
+}
+
+.bg_left {
+  background-color: #faf8f5;
+  width: 100%;
+  min-width: 1008px;
+  max-width: 1280px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.bg_right {
+  background-color: #a9d6cb;
+  width: 100%;
+  min-width: 432px;
+  max-width: 640px;
+  display: flex;
+  justify-content: flex-start;
+}
+/* -------------------------------------------- */
+
+.left {
+  width: 100%;
+  max-width: 1120px;
+}
+
+.left nav {
+  display: flex;
+  gap: 164px;
+  height: 120px;
+  align-items: center;
+}
+.left ul {
+  display: flex;
+  gap: 56px;
+}
+.more {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.logo {
+  font-weight: 600;
+  font-size: 36px;
+  color: #264065;
+}
+.logo span {
+  color: #a9d6cb;
+}
+
+h1 {
+  width: 809px;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 80px;
+  color: #264065;
+  margin-top: 80px;
+}
+.left main > p {
+  width: 760px;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 40px;
+  margin-top: 32px;
+}
+
+.play {
+  display: flex;
+  align-items: center;
+  margin: 56px 0 232px 0;
+  gap: 32px;
+}
+.play > :nth-child(2) {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.play > :first-child {
+  padding: 16px 46px 16px 46px;
+  background-color: #264065;
+  border-radius: 24px;
+  color: #ffffff;
+}
+.play > :nth-child(2) img {
+  padding: 12px;
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+
+.data {
+  display: flex;
+  padding: 32px;
+  gap: 72px;
+  background-color: #ffffffcc;
+  width: fit-content;
+  translate: 0 -50%;
+}
+.data > div {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 145px;
+}
+.data > div > img {
+  align-self: center;
+  margin-bottom: 24px;
+}
+.data > div > :nth-child(2) {
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 100%;
+  color: #264065;
+  margin-bottom: 16px;
+}
+.data > div > :last-child {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 100%;
+  color: #909090;
+}
+
+/* -------------------------------------------- */
+
+.right {
+  width: 100%;
+  max-width: 480px;
+}
+
+.right nav {
+  display: flex;
+  gap: 66px;
+  align-items: center;
+  height: 120px;
+  justify-content: flex-end;
+}
+.right nav > div {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
+.signin {
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 40px;
+  color: #264065;
+  text-decoration: underline;
+}
+.signup {
+  padding: 16px 40px 16px 40px;
+  background-color: #264065;
+  border-radius: 24px;
+  color: #ffffff;
+}
+
+.right main {
+  translate: -120px -70px;
+}
+
+/* -------------------------------------------- */
+body > footer {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+body > footer div {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+  width: 405px;
+  padding: 24px;
+  border-radius: 16px;
+  color: #070d15;
+}
+body > footer div > img {
+  align-self: flex-start;
+}
+body > footer div > :last-child {
+  font-weight: 700;
+  color: #264065;
+}
+
+.float {
+  position: relative;
+}
+.float > div {
+  position: absolute;
+}
+.float > :nth-child(2) {
+  top: 435px;
+  right: 66px;
+  background-color: #ffffff80;
+}
+.float > :nth-child(3) {
+  top: 747px;
+  right: 206px;
+  background-color: #ffffff80;
+}
+
+.mi-contenedor {
+  margin: 10px;
+}
+
+/* Cambia a 30px cuando la pantalla tenga 600px de ancho o más */
+@media (max-width: 1600px) {
+  body > footer {
+    top: 0;
+    right: -300px;
+  }
+}
+
+/* Cambia a 80px cuando la pantalla tenga 1024px de ancho o más (escritorios) */
+@media (min-width: 1024px) {
+  .mi-contenedor {
+    margin: 80px;
+  }
+}
